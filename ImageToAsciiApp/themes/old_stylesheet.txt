@@ -1,0 +1,255 @@
+QMainWindow{
+	outline: 0;
+	background-color: rgb(46, 46, 48);
+}
+
+QWidget{
+	background: transparent;
+	background-color: rgb(65, 65, 65);
+}
+
+QFrame{
+	border-radius: 9px;
+	background-color: rgb(63, 63, 63);
+}
+
+QFrame.transparentFrame{
+	background: transparent;
+}
+
+QFrame#container{
+	background-color: rgb(60, 60, 60);
+	/*background-color: rgb(38, 38, 38);*/
+	/*background-color: rgb(51, 55, 64);*/
+}
+
+QFrame#sizegripper_frame{
+	background-color: rgb(56, 56, 57);
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+QFrame#sizegripper{
+	border-radius: 7px;
+	background-color: rgba(92, 92, 95, 100);
+}
+
+QFrame#sizegripper:hover{
+	background-color: rgba(175, 175, 175, 100);
+}
+
+QFrame#titleBar{
+	background-color: rgb(63, 63, 63);
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+QFrame#container{
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+QFrame#titleBtns{
+	background: transparent;
+}
+
+QFrame#closeBtnFrame{
+	background: transparent;
+	border-radius: 12px;
+	border: 2px solid rgb(255, 17, 116);
+}
+
+QFrame#minimizeBtnFrame{
+	background: transparent;
+	border-radius: 12px;
+	border: 2px solid rgb(85, 85, 255);
+}
+
+QFrame#maximizeBtnFrame{
+	background: transparent;
+	border-radius: 12px;
+	border: 2px solid rgb(198, 200, 34);
+}
+
+QFrame#themeBtnFrame{
+	background: transparent;
+	border-radius: 12px;
+	border: 2px solid rgb(240, 25, 160);
+}
+
+QFrame:disabled{
+	color: rgb(80, 80, 80);
+}
+
+QLabel{
+	color: rgb(222, 222, 222);
+	border: none;
+	background: transparent;
+	font: 10pt "MS Shell Dlg 2";
+}
+
+QLabel#title{
+	color: rgb(218, 218, 218);
+	font: 16pt "Northstar Outline";
+}
+
+QTextEdit{
+	color: rgb(222, 222, 222);
+	background-color: rgb(65, 65, 65);
+	border: 0;
+	border-radius: 9px;
+	font: 10pt "MS Shell Dlg 2";
+}
+
+QPushButton#closeBtn{
+	color: rgb(255, 17, 116);
+	background-color: rgb(255, 17, 116);
+	border-radius: 8px;
+	font: 10pt "MS Shell Dlg 2";
+}
+
+QPushButton#closeBtn:hover{
+	color: rgb(255, 255, 255);
+}
+
+QPushButton#closeBtn:pressed{
+	background-color: rgb(198, 13, 90);
+}
+
+QPushButton#minimizeBtn{
+	color: rgb(85, 85, 255);
+	background-color: rgb(85, 85, 255);
+	border-radius: 8px;
+	font: 20pt "MS Shell Dlg 2";
+	padding-bottom: 2px;
+}
+
+QPushButton#minimizeBtn:hover{
+	color: rgb(255, 255, 255);
+}
+
+QPushButton#minimizeBtn:pressed{
+	background-color: rgb(73, 73, 220);
+}
+
+QPushButton#maximizeBtn{
+	color: rgb(198, 200, 34);
+	background-color: rgb(198, 200, 34);
+	border-radius: 8px;
+	font: 12pt "MS Shell Dlg 2";
+	padding-bottom: 2px;
+}
+
+QPushButton#maximizeBtn:hover{
+	color: rgb(255, 255, 255);
+}
+
+QPushButton#maximizeBtn:pressed{
+	background-color: rgb(179, 179, 30);
+}
+
+QPushButton#themeBtn{
+	background-color: qconicalgradient(cx:0.232, cy:0, angle:155.7, stop:0.293926 rgba(86, 0, 97, 255), stop:0.523861 rgba(255, 28, 166, 255));
+	border-radius: 8px;
+}
+
+QPushButton#themeBtn:hover{
+	color: rgb(255, 255, 255);
+	background-color: qconicalgradient(cx:0.232, cy:0, angle:155.7, stop:0.293926 rgba(183, 0, 207, 255), stop:0.523861 rgba(255, 28, 166, 255));
+}
+
+QPushButton#themeBtn:pressed{
+	background-color: rgb(195, 9, 174);
+}
+
+QPushButton{
+	color: rgb(225, 225, 225);
+	background-color: rgba(104, 104, 108, 200);
+	background-color: rgb(75, 75, 75);
+	font: 10pt "MS Shell Dlg 2";
+	border-radius: 9px;
+	/*background-color: rgb(21, 183, 252);*/
+}
+
+QPushButton:hover{
+	background-color: rgba(13, 165, 253, 230);
+}
+
+QPushButton:pressed{
+	color: rgb(165, 165, 165);
+	background-color: rgba(13, 165, 253, 150);
+}
+
+QPushButton:disabled{
+	color: rgb(126, 126, 126);
+	background-color: rgb(72, 72, 75);
+}
+
+
+/****** CUSTOM STYLES *******/
+QLabel#imageViewer{
+	border-radius: 9px;
+	background-color: rgb(63, 63, 63);
+	font: 13pt "MS Shell Dlg 2";
+}
+
+
+
+
+
+QSlider::groove:horizontal {
+border: 1px solid #bbb;
+background: white;
+height: 10px;
+border-radius: 4px;
+}
+
+QSlider::sub-page:horizontal {
+background: qlineargradient(x1: 0, y1: 0,    x2: 0, y2: 1,
+    stop: 0 #66e, stop: 1 #bbf);
+background: qlineargradient(x1: 0, y1: 0.2, x2: 1, y2: 1,
+    stop: 0 #bbf, stop: 1 #55f);
+border: 1px solid #777;
+height: 10px;
+border-radius: 4px;
+}
+
+QSlider::add-page:horizontal {
+background: #fff;
+border: 1px solid #777;
+height: 10px;
+border-radius: 4px;
+}
+
+QSlider::handle:horizontal {
+background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+    stop:0 #eee, stop:1 #ccc);
+border: 1px solid #777;
+width: 13px;
+margin-top: -2px;
+margin-bottom: -2px;
+border-radius: 4px;
+}
+
+QSlider::handle:horizontal:hover {
+background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+    stop:0 #fff, stop:1 #ddd);
+border: 1px solid #444;
+border-radius: 4px;
+}
+
+QSlider::sub-page:horizontal:disabled {
+background: #bbb;
+border-color: #999;
+}
+
+QSlider::add-page:horizontal:disabled {
+background: #eee;
+border-color: #999;
+}
+
+QSlider::handle:horizontal:disabled {
+background: #eee;
+border: 1px solid #aaa;
+border-radius: 4px;
+}
